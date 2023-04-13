@@ -1,15 +1,17 @@
-import Department from './department'
-import './App.css';
-import LoginForm from './login';
+import Department from "./Components/Department";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Department />,
+    },
+  ]);
   return (
-  
-<>
-
-{/* <Department/> */}
-
-<LoginForm/>
-</>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
