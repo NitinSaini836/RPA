@@ -1,0 +1,9 @@
+{
+    "routes": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "handler": "user.login"
+      }
+    ]
+  }
