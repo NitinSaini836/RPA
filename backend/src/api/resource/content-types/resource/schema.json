@@ -4,7 +4,8 @@
   "info": {
     "singularName": "resource",
     "pluralName": "resources",
-    "displayName": "resource"
+    "displayName": "Resources",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,12 +13,14 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "text",
+      "required": true
     },
-    "email": {
-      "type": "string"
+    "companyEmail": {
+      "type": "email",
+      "required": true
     },
-    "phone": {
+    "phoneNo": {
       "type": "integer"
     },
     "department": {

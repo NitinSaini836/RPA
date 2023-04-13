@@ -1,5 +1,5 @@
 {
-  "name": "beckend",
+  "name": "department",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -13,14 +13,14 @@
     "@strapi/plugin-i18n": "4.9.0",
     "@strapi/plugin-users-permissions": "4.9.0",
     "@strapi/strapi": "4.9.0",
-    "mysql": "2.18.1",
-    "passport": "^0.6.0"
+    "cors": "^2.8.5",
+    "mysql": "2.18.1"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "5aefbcd4-735a-4b16-a5a2-33c3cb703c25"
+    "uuid": "a18a8c63-f31e-48d5-acff-4e17f2453e93"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",

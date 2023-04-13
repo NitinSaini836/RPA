@@ -1,15 +1,12 @@
-import Department from './department'
+
 import './App.css';
-import LoginForm from './login';
+import Department from './components/departmentComponent/Department';
+
 function App() {
   return (
-  
-<>
-
-{/* <Department/> */}
-
-<LoginForm/>
-</>
+    <div className="App">
+      <Department />
+    </div>
   );
 }
 
