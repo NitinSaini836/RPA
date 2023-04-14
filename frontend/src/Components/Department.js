@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./Department.css";
 
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
+import Button from "@mui/material/Button";
+
 const DepartmentHeader = () => {
   const [showForm, setShowForm] = useState(false);
   const [name, setName] = useState("");
@@ -29,20 +34,30 @@ const DepartmentHeader = () => {
             Add Department
           </button>
           {showForm && (
-            <form className="form" onSubmit={handleFormSubmit}>
-              <label className="label">
-                Name:
-                <input
-                  className="input"
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </label>
-              <button className="button" type="submit">
+            <FormControl
+              style={{
+                width: "50%",
+                left: "25%",
+                top: "25%",
+              }}
+              variant="standard"
+            >
+              <InputLabel>Name:</InputLabel>
+              <Input
+                id="component-simple"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <Button
+                onClick={handleFormSubmit}
+                className="button"
+                variant="contained"
+                type="submit"
+              >
                 Submit
-              </button>
-            </form>
+              </Button>
+            </FormControl>
           )}
         </div>
         {submittedName && (
